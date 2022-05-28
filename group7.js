@@ -8,12 +8,12 @@ function getNumberOrString(value) {
     }
   }
   
-
   
-  document.getElementById('button').addEventListener('click', (event) => {
+  
+  document.getElementById('buttons').addEventListener('click', (event) => {
     let element_list = document.getElementById('list');
     let new_li = document.createElement('li');
-    new_li.innerText = getNumberOrString(document.getElementById('text').value);
+    new_li.innerText = getNumberOrString(document.getElementById('comments').value);
   
     element_list.appendChild(new_li);
   
